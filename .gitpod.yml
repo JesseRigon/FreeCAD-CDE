@@ -1,10 +1,10 @@
-image:
-  file: workspace.Dockerfile
+image: 
+  file: Fruitful3DNative.Dockerfile
 
 
-additionalRepositories:
-  - url: https://github.com/JesseRigon/FreeCAD
-    checkoutLocation: FreeCAD
+#additionalRepositories:
+#  - url: https://github.com/JesseRigon/FreeCAD
+#    checkoutLocation: FreeCAD
 
 workspaceLocation: main.code-workspace
 
