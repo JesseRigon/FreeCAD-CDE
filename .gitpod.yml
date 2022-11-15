@@ -1,0 +1,10 @@
+image:
+  file: workspace.Dockerfile
+
+
+additionalRepositories:
+  - url: https://github.com/JesseRigon/FreeCAD
+    checkoutLocation: FreeCAD
+
+workspaceLocation: main.code-workspace
+
