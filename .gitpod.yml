@@ -6,5 +6,5 @@ image:
 #  - url: https://github.com/JesseRigon/FreeCAD
 #    checkoutLocation: FreeCAD
 
-workspaceLocation: main.code-workspace
+workspaceLocation: FreeCAD-GP/main.code-workspace
 
