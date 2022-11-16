@@ -1,3 +1,5 @@
 FROM gitpod/workspace-full-vnc
 
-RUN sudo apt-get update && sudo apt-get upgrade
+USER root
+
+RUN sudo apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
