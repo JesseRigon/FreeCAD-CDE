@@ -1,9 +1,12 @@
-image: 
-  file: Fruitful3DNative.Dockerfile
+image: gitpod/workspace-full-vnc
+
+tasks:
+  - name: prebuild
+    init: sudo apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean
 
 ports:
   - port: 6080
-    visibility: private
+    visibility: public
     onOpen: open-browser
 
   - port: 1593
