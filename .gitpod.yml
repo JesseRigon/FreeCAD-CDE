@@ -1,8 +1,21 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - name: prebuild
-    init: sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove && sudo apt-get autoclean
+  - name: Conda
+    init: |
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt-get autoremove
+    sudo apt-get autoclean
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+    bash ~/miniconda.sh -b -p ~/miniconda
+    eval "$(/Users/jsmith/miniconda/bin/conda shell.YOUR_SHELL_NAME hook)"
+    conda init
+
+#  - name: FreeCAD
+#    init: |
+
+    
 
 ports:
   - port: 6080
