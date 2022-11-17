@@ -1,12 +1,17 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - name: Conda
+  - name: update
     init: |
       sudo apt-get update
       sudo apt-get upgrade -y
       sudo apt-get autoremove
       sudo apt-get autoclean
+      gp sync-done update
+     
+  - name: Conda
+    init: |
+      gp sync-await update
       wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
       bash ~/miniconda.sh -b -p ~/miniconda
       eval "$(~/miniconda/bin/conda shell.bash hook)"
