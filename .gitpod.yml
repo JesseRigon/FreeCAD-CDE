@@ -12,7 +12,7 @@ tasks:
      
   - name: Environment
     before: |
-      gp sync-await 
+      gp sync-await Update
       sudo apt-get install -y freecad
 
 
