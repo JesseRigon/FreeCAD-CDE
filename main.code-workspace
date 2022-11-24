@@ -9,8 +9,8 @@
 			  "path": "../FreeCAD"
 		  },
 		  {
-			"path": "../Builds"
-		},
-	  ],
+			  "path": "../Builds"
+		  },
+    	],
   
 }
