@@ -29,17 +29,23 @@ fi
 echo "# ------------------------------------------"
 echo "# UNCOMPRESS: The FreeCAD source code."
 echo "# ------------------------------------------"
-rm -fR "${FOLDER_SOURCE}"
-mkdir -p "${FOLDER_SOURCE}"
+rm -fR "${SOURCE_FOLDER}"
+mkdir -p "${SOURCE_FOLDER}"
 
 if [ ${COMPRESS_FORMAT} = ".tar.gz" ]; then
-  tar -zxf "${TAG_NUMBER}${COMPRESS_FORMAT}" --strip-components 1 -C "${FOLDER_SOURCE}"
+  tar -zxf "${TAG_NUMBER}${COMPRESS_FORMAT}" --strip-components 1 -C "${SOURCE_FOLDER}"
+  rm -f "${TAG_NUMBER}${COMPRESS_FORMAT}"
 fi
 
 if [ ${COMPRESS_FORMAT} = ".zip" ]; then
   TEMPORAL_DIRECTORY=$(mktemp -d)
   unzip -q "${TAG_NUMBER}${COMPRESS_FORMAT}" -d "${TEMPORAL_DIRECTORY}"
   # shellcheck disable=SC2039
-  mv "${TEMPORAL_DIRECTORY}"/*/{.[!.],}* "${FOLDER_SOURCE}"
+  mv "${TEMPORAL_DIRECTORY}"/*/{.[!.],}* "${SOURCE_FOLDER}"
   rm -fR "${TEMPORAL_DIRECTORY}"
+  rm -f "${TAG_NUMBER}${COMPRESS_FORMAT}"
 fi
+
+echo "# ------------------------------------------"
+echo "# Done Decompressing"
+echo "# ------------------------------------------"

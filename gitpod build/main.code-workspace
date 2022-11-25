@@ -6,13 +6,10 @@
 				"path": "." // Main repo that you will open in Gitpod (e.g. frontend)
 		  	},
 		  	{
-				"path": "../FreeCAD-Source"
+				"path": "../FreeCAD"
 		  	},
 		  	{
-				"path": "../FreeCAD-Files"
-		  	},
-		  	{
-				"path": "../FreeCAD-Builds"
+				"path": "../Builds"
 		  	},
     	],
   
