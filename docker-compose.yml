@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        - IMAGE_FREECAD_DOCKER
+        - FREECAD_DOCKER_IMAGE
         - FOLDER_SOURCE
     working_dir: /root
 
