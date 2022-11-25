@@ -9,5 +9,6 @@ xhost +local:
 mkdir -p "${BUILD_FOLDER}"
 mkdir -p "${FILES_FOLDER}"
 
-docker-compose down
-docker-compose up --build --remove-orphans
+docker compose down
+docker compose build
+docker compose up

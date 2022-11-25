@@ -1,7 +1,6 @@
 version: "3.2"
 services:
-  freecad_build_service:
-    image: "${IMAGE_NAME}"
+  freecad_local:
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,8 +12,8 @@ services:
     working_dir: /root
 
   freecad_container_service:
-    container_name: "${CONTAINER_NAME}"
-    image: "${IMAGE_NAME}"
+    container_name: freecad_container_service
+    build: .
     volumes:
       - type: volume
         source: source_folder
@@ -30,7 +29,7 @@ services:
         target: /tmp/.X11-unix
         read_only: true
     depends_on:
-      - freecad_build_service
+      - freecad_local
     working_dir: /root
     entrypoint: /mnt/build/bin/FreeCAD --version
 
