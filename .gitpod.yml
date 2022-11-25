@@ -1,0 +1,30 @@
+image: gitpod/workspace-full-vnc
+
+tasks:
+  - name: Update
+    before: |
+      sudo apt-get update
+      sudo apt-get upgrade -y
+      sudo apt-get autoremove
+      sudo apt-get autoclean
+      gp sync-done Update
+      exit
+     
+ 
+ports:
+  - port: 6080
+    visibility: public
+    onOpen: open-browser
+
+  - port: 1593
+    onOpen: ignore
+
+  - port: 5900
+    onOpen: ignore
+
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+
+workspaceLocation: FreeCAD-GP/main.code-workspace
