@@ -9,7 +9,6 @@ COPY ${SOURCE_FOLDER} /mnt/source
 ENV DISPLAY=:0
 ENV QT_X11_NO_MITSHM=1
 ENV LIBGL_ALWAYS_INDIRECT=1
-RUN mkdir -p /mnt/build
 RUN /root/build_script.sh
 
 # Update and install base packages.
