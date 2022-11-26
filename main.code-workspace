@@ -9,13 +9,13 @@
 				"path": "../FreeCAD-Docker"
 		  	},
 		  	{
-				"path": "../FreeCAD-Source"
+				"path": "../FreeCAD-Sources"
+		  	},
+		  	{
+				"path": "../FreeCAD-Builds"
 		  	},
 		  	{
 				"path": "../FreeCAD-Files"
-		  	},
-		  	{
-				"path": "../FreeCAD-Build"
 		  	},
     	],
   
