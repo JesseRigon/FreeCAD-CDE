@@ -1,16 +1,5 @@
 image: gitpod/workspace-full-vnc
 
-tasks:
-  - name: Update
-    before: |
-      sudo apt-get update
-      sudo apt-get upgrade -y
-      sudo apt-get autoremove
-      sudo apt-get autoclean
-      gp sync-done Update
-      exit
-     
- 
 ports:
   - port: 6080
     visibility: public
@@ -26,5 +15,9 @@ github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
     master: true
+
+additionalRepositories:
+  - url: https://github.com/FruitfulSystems/FreeCAD-Docker
+    checkoutLocation: FreeCAD-Docker
 
 workspaceLocation: FreeCAD-GP/main.code-workspace
