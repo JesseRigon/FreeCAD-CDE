@@ -1,5 +1,13 @@
 image: gitpod/workspace-full-vnc
 
+tasks:
+  - command: |
+      cd ../FreeCAD && git fetch
+      cd ../FreeCAD-Docker && git fetch
+      xhost si:localuser:root
+
+
+
 ports:
   - port: 6080
     visibility: public
