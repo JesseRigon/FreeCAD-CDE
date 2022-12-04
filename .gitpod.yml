@@ -27,5 +27,7 @@ github:
 additionalRepositories:
   - url: https://github.com/FruitfulSystems/FreeCAD-Docker
     checkoutLocation: FreeCAD-Docker
+  - url: https://github.com/FruitfulSystems/FreeCAD
+    checkoutLocation: FreeCAD
 
 workspaceLocation: FreeCAD-GP/main.code-workspace
