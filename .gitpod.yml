@@ -29,5 +29,7 @@ additionalRepositories:
     checkoutLocation: FreeCAD-Docker
   - url: https://github.com/FruitfulSystems/FreeCAD
     checkoutLocation: FreeCAD
+  - url: https://github.com/JesseRigon/dotfiles
+    checkoutLocation: dotfiles
 
 workspaceLocation: FreeCAD-GP/main.code-workspace
