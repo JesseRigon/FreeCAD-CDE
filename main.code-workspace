@@ -9,12 +9,12 @@
 				"path": "." // Main repo that you will open in Gitpod (e.g. frontend)
 		  	},
 			{
-				"path": "../FreeCAD"
+				"path": "../FreeCAD-Docker"
 			},
 			{
-				"path": "../FreeCAD-Docker"
-		  	},
-		  	{
+				"path": "../FreeCAD"
+			},
+				{
 				"path": "../FreeCAD-Sources"
 		  	},
 		  	{
