@@ -25,8 +25,8 @@ github:
     master: true
 
 additionalRepositories:
-  - url: https://github.com/FruitfulSystems/FreeCAD-Docker
-    checkoutLocation: FreeCAD-Docker
+  - url: https://github.com/FruitfulSystems/FreeCAD-Dev
+    checkoutLocation: FreeCAD-Dev
   - url: https://github.com/FruitfulSystems/FreeCAD
     checkoutLocation: FreeCAD
   - url: https://github.com/JesseRigon/dotfiles
