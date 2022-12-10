@@ -4,7 +4,7 @@
 	  	"folders": [
 			{
 				"path": "../.dotfiles"  //this allows you to edit Gitpod Dotfiles
-			}
+			},
 		  	{
 				"path": "." // Main repo that you will open in Gitpod (e.g. frontend)
 		  	},
