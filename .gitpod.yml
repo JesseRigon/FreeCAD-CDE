@@ -2,8 +2,9 @@ image: gitpod/workspace-full-vnc
 
 tasks:
   - command: |
+      
       cd ../FreeCAD && git fetch
-      cd ../FreeCAD-Docker && git fetch
+      cd ../FreeCAD-Dev && git fetch
       xhost si:localuser:root
 
 
@@ -29,7 +30,5 @@ additionalRepositories:
     checkoutLocation: FreeCAD-Dev
   - url: https://github.com/FruitfulSystems/FreeCAD
     checkoutLocation: FreeCAD
-  - url: https://github.com/JesseRigon/dotfiles
-    checkoutLocation: dotfiles
-
+    
 workspaceLocation: FreeCAD-GP/main.code-workspace

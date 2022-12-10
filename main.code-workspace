@@ -3,7 +3,7 @@
 	// The additional repos are cloned inside /workspace dir
 	  	"folders": [
 			{
-				"path": "../dotfiles"
+				"path": "../.dotfiles"  //this allows you to edit Gitpod Dotfiles
 			}
 		  	{
 				"path": "." // Main repo that you will open in Gitpod (e.g. frontend)
